@@ -5,6 +5,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AddClientComponent } from './components/add-client/add-client.component';
+
 import { EditClientComponent } from './components/edit-client/edit-client.component';
 import { ClientDetailsComponent } from './components/client-details/client-details.component';
 import { SetingsComponent } from './components/setings/setings.component';
@@ -16,7 +17,7 @@ const routes: Routes = [
   {path: 'register',component: RegisterComponent},
   {path: 'client/add',component: AddClientComponent},
   {path: 'client/edit/:id',component: EditClientComponent},
-  {path: 'client/:id',component: DashboardComponent},
+  {path: 'client/:id',component: ClientDetailsComponent},
   {path: 'settings',component: SetingsComponent},
   {path: '**',component: NotFoundComponent},
 
